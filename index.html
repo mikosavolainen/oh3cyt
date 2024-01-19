@@ -12,11 +12,15 @@
 
     <script src="language.js" defer></script>
     <script src="analytics-ads.js" defer></script>
+    <script src="cokies.js" defer></script>
 
 
 </head>
 <body>
-
+    <div id="cookiePopup" class="cookie-popup">
+        <p>Tämä sivusto käyttää evästeitä varmistaakseen parhaan kokemuksen.</p>
+        <button onclick="acceptCookies()">Hyväksy evästeet</button>
+    </div>
     <header>
         <h1 id="site-title">OH3CYT</h1>
         
@@ -46,6 +50,7 @@
         </div>
     </nav>
     
+
 
     <div class="content">
         <!-- Tässä voit lisätä muuta sisältöä sivullesi -->

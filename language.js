@@ -6,6 +6,21 @@ function changeLanguage(language) {
 
     document.getElementById('site-title').innerText = titles[language];
 
+    const cookies = {
+        'fi': 'Tämä sivusto käyttää evästeitä varmistaakseen parhaan kokemuksen.',
+        'en': 'This website uses cookies to ensure the best experience.'
+    };
+    const cookies2 = {
+        'fi': 'Hyväksy evästeet',
+        'en': 'Accept cookies'
+    };
+    
+    document.getElementById('cookiePopup').innerHTML = `
+        <p>${cookies[language]}</p>
+        <button onclick="acceptCookies()">${cookies2[language]}</button>
+
+    `;
+    
     // Lisää "Laitteisto" -osion päivitys tähän
     const laitteistoSection = document.getElementById('laitteisto');
     const laitteistoContent = {
@@ -55,5 +70,4 @@ function changeLanguage(language) {
         `
     };
 
-    laitteistoSection.innerHTML = laitteistoContent[language];
 }

@@ -18,5 +18,5 @@
     };
 
     // Google Ads
-    gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/YOUR_CONVERSION_ID'});
+   // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/YOUR_CONVERSION_ID'});
 })();
