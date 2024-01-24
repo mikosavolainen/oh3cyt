@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OH3CYT</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lisää Bootstrap CDN-linkki -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-......" crossorigin="anonymous">
+
+    <script src="language.js" defer></script>
+    <script src="analytics-ads.js" defer></script>
+    <script src="cokies.js" defer></script>
+
+
+</head>
+<body>
+    <div id="cookiePopup" class="cookie-popup">
+        <p>Tämä sivusto käyttää evästeitä varmistaakseen parhaan kokemuksen.</p>
+        <button onclick="acceptCookies()">Hyväksy evästeet</button>
+    </div>
+    <header>
+        <h1 id="site-title">OH3CYT</h1>
+        
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#laitteisto">Laitteisto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/mikosavolainen" target="_blank">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.qrz.com/db/OH3CYT" target="_blank">QRZ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.eQSL.cc/Member.cfm?OH3CYT" target="_blank">eQSL</a>
+                </li>
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="http://websdr.fi:8080" target="_blank">WebSDR</a>
+                </li>
+            </ul>
+            <div class="ml-auto">
+                <button type="button" class="btn btn-link text-white" value="fi" onclick="changeLanguage('fi')">Suomi</button>
+                <button type="button" class="btn btn-link text-white" value="en" onclick="changeLanguage('en')">English</button>
+            </div>
+                       
+        </div>
+    </nav>
+    
+
+
+    <div class="content">
+        <!-- Tässä voit lisätä muuta sisältöä sivullesi -->
+
+        <section id="galleria">
+            <h2>Galleria</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="kuva1.jpg" data-lightbox="galleria" data-title="Kuva 1">
+                    <img src="photos/kuva1-thumb.jpg" alt="Kuva 1">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="kuva2.jpg" data-lightbox="galleria" data-title="Kuva 2">
+                    <img src="photos/kuva2-thumb.jpg" alt="Kuva 2">
+                </a>
+            </div>
+            <!-- Lisää kuvia tarvittaessa -->
+        </div>
+
+        </section>
+
+<section id></section>
+
+    </div>
+
+  
+    <footer class="fixed-bottom bg-dark text-white text-center p-2">
+        &copy; 2024 OH3CYT
+    </footer>
+
+    <!-- Lisää Bootstrapin JS- ja Popper.js-skriptit -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

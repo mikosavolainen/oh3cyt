@@ -18,10 +18,15 @@ function changeLanguage(language) {
     document.getElementById('cookiePopup').innerHTML = `
         <p>${cookies[language]}</p>
         <button onclick="acceptCookies()">${cookies2[language]}</button>
-
     `;
-    
-    // Lisää "Laitteisto" -osion päivitys tähän
+
+    const gallery = {
+        'fi': 'GALLERIA',
+        'en': 'GALLERY'
+    };
+
+    document.getElementById('site-gallery').innerText = gallery[language];
+
     const laitteistoSection = document.getElementById('laitteisto');
     const laitteistoContent = {
         'fi': `
@@ -40,7 +45,7 @@ function changeLanguage(language) {
             <li>Nagoya NA-771 UHF/VHF</li>
             <li>Hamking SG-7900 UHF/VHF</li>
             <li>ABBREE Taktinen käsiradio antenni UHF/VHF</li>
-            <li>50m pitkä "Random wire" antenni 9:1 Balun</li>
+            <li>30m pitkä "Random wire" antenni 9:1 Balun</li>
             <br>
             <h2>Muut</h2>
             <li>RTL-SDR v3</li>
@@ -62,7 +67,7 @@ function changeLanguage(language) {
             <li>Nagoya NA-771 UHF/VHF</li>
             <li>Hamking SG-7900 UHF/VHF</li>
             <li>ABBREE Tactical Handheld Radio Antenna UHF/VHF</li>
-            <li>50m long "Random wire" antenna with 9:1 Balun</li>
+            <li>30m or 100ft long "Random wire" antenna with 9:1 Balun</li>
             <br>
             <h2>Other</h2>
             <li>RTL-SDR v3</li>
@@ -70,4 +75,24 @@ function changeLanguage(language) {
         `
     };
 
+ 
+    localStorage.setItem('selectedLanguage', language);
+
+    const storedLanguage = localStorage.getItem('selectedLanguage');
+    if (storedLanguage) {
+        language = storedLanguage;
+    }
+
+    laitteistoSection.innerHTML = laitteistoContent[language];
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const storedLanguage = localStorage.getItem('selectedLanguage');
+    const defaultLanguage = 'fi';
+    const languageToUse = storedLanguage || defaultLanguage;
+
+    
+    changeLanguage(languageToUse);
+});
