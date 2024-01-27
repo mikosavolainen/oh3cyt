@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    
 }
 
 header {
@@ -47,6 +48,47 @@ footer {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+
+/* styles.css */
+
+/* styles.css */
+
+#ham-propagation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#solar-terrestrial-container {
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin-left: auto; /* Align to the right */
+}
+
+#laitteisto {
+    /* Add any specific styles for the laitteisto section */
+    /* For example, you can set a max-width if needed */
+    max-width: 600px;
+}
+
+@media only screen and (max-width: 767px) {
+    #ham-propagation {
+        flex-direction: column;
+        justify-content: center; /* Center on smaller screens */
+    }
+
+    #solar-terrestrial-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    #laitteisto {
+        max-width: none; /* Adjust as needed */
+    }
+}
+
+
+
 
 
 /* Lisää omia tyylisääntöjä tarvittaessa */
