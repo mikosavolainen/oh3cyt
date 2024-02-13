@@ -4,6 +4,11 @@ body {
     
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -87,6 +92,35 @@ footer {
     }
 }
 
+@media screen and (max-width: 900px) {
+    #solar-terrestrial-container {
+        display: none;
+    }
+
+    #HF-Logbook {
+        display: none;
+    }
+    #galleria {
+        display: none;
+    }
+}
+
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 
