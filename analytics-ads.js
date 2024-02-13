@@ -2,7 +2,7 @@
 
 (function () {
     // Google Analytics
-    var trackingID = 'G-12E7VJ916H';
+    var trackingID = 'G-B2GD7H6D8B';
 
     // Lisää Google Analyticsin gtag-koodi
     var script = document.createElement('script');
